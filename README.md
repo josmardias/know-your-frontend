@@ -1,4 +1,4 @@
-# size-list
+# know-your-stack
 A list of some libraries/frameworks
 
 Sizes
