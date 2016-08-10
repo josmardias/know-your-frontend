@@ -1,6 +1,7 @@
 # size-list
 A list of some libraries/frameworks
 
+Sizes
 ```
 $ du -sh libs/*
 164K	libs/Angular
@@ -10,6 +11,19 @@ $ du -sh libs/*
 96K   libs/jQuery-3
 220K	libs/React-15
 ```
+
+Gzipped
+```
+$ for i in libs/*; do tar -cz $i | wc -c | numfmt -z --to=iec --format="%.2f"; echo -e "\t$i"; done
+54.99K 	libs/Angular
+122.46K 	libs/Angular-2
+552.58K 	libs/FontAwesome-4.6.3
+29.21K 	libs/jQuery-2
+29.40K 	libs/jQuery-3
+59.00K 	libs/React-15
+```
+
+Files
 ```
 $ tree
 ├── libs
