@@ -1,5 +1,6 @@
 # size-list
-A list of some libraries/frameworks with it's sizes
+A list of some libraries/frameworks
+
 ```
 $ du -sh libs/*
 164K	libs/Angular
