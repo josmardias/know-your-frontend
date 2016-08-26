@@ -1,5 +1,5 @@
-# know-your-stack
-A list of some libraries/frameworks
+# know-your-frontend
+Useful information about frontend libraries/frameworks
 
 Sizes
 ```
