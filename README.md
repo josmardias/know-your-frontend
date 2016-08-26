@@ -10,6 +10,7 @@ $ du -sh libs/*
 88K     libs/jQuery-2
 96K     libs/jQuery-3
 220K    libs/React-15
+84K     libs/Vue
 ```
 
 Gzipped
@@ -21,6 +22,7 @@ $ for i in libs/*; do tar -cz $i | wc -c | numfmt -z --to=iec --format="%.2f"; e
 29.21K    libs/jQuery-2
 29.40K    libs/jQuery-3
 59.00K    libs/React-15
+26.10K    libs/Vue
 ```
 
 Files
@@ -43,11 +45,13 @@ libs/
 │   └── jquery-2.2.4.min.js
 ├── jQuery-3
 │   └── jquery-3.1.0.min.js
-└── React-15
-    ├── react-15.3.0.min.js
-    ├── react-dom-15.3.0.min.js
-    ├── react-router-2.6.1.min.js
-    └── redux-3.5.2.min.js
+├── React-15
+│   ├── react-15.3.0.min.js
+│   ├── react-dom-15.3.0.min.js
+│   ├── react-router-2.6.1.min.js
+│   └── redux-3.5.2.min.js
+└── Vue
+    └── vue-1.0.26.min.js
 
-6 directories, 15 files
+7 directories, 16 files
 ```
