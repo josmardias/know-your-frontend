@@ -9,7 +9,7 @@ $ du -sh libs/*
 936K    libs/FontAwesome-4.6.3
 88K     libs/jQuery-2
 96K     libs/jQuery-3
-220K    libs/React-15
+276K    libs/React-15
 84K     libs/Vue
 ```
 
@@ -21,7 +21,7 @@ $ for i in libs/*; do tar -cz $i | wc -c | numfmt -z --to=iec --format="%.2f"; e
 552.58K   libs/FontAwesome-4.6.3
 29.21K    libs/jQuery-2
 29.40K    libs/jQuery-3
-59.00K    libs/React-15
+74.54K    libs/React-15
 26.10K    libs/Vue
 ```
 
@@ -46,6 +46,7 @@ libs/
 ├── jQuery-3
 │   └── jquery-3.1.0.min.js
 ├── React-15
+│   ├── immutable-3.8.1.min.js
 │   ├── react-15.3.0.min.js
 │   ├── react-dom-15.3.0.min.js
 │   ├── react-router-2.6.1.min.js
@@ -53,5 +54,5 @@ libs/
 └── Vue
     └── vue-1.0.26.min.js
 
-7 directories, 16 files
+7 directories, 17 files
 ```
