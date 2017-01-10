@@ -1,32 +1,18 @@
 # know-your-frontend
 Useful information about frontend libraries/frameworks
 
-Sizes
+Folders (Size / Gzipped)
 ```
-$ du -sh libs/* | column -t
-168K  libs/Angular
-628K  libs/Angular-2
-1.1M  libs/FontAwesome-4.6.3
-88K   libs/jQuery-2
-92K   libs/jQuery-3
-220K  libs/React-15
-140K  libs/React-15-util
-80K   libs/Vue
-76K   libs/Vue-2
-```
-
-Gzipped
-```
-$ for i in libs/*; do tar -cz $i | wc -c | numfmt -z --to=iec --format="%.2f"; echo -e "\t\t$i"; done | column -t
-56.71K   libs/Angular
-122.46K  libs/Angular-2
-613.70K  libs/FontAwesome-4.6.3
-29.21K   libs/jQuery-2
-29.44K   libs/jQuery-3
-59.39K   libs/React-15
-31.48K   libs/React-15-util
-26.26K   libs/Vue
-25.90K   libs/Vue-2
+$ for i in libs/*; do du -sh $i | tr -d '\n' | sed -e 's/\s.*$//'; echo -en "\t"; tar -cz $i | wc -c | numfmt -z --to=iec --format="%.2f"; echo -e "\t\t$i"; done | column -t
+168K  56.71K   libs/Angular
+628K  122.46K  libs/Angular-2
+1.1M  613.70K  libs/FontAwesome-4.6.3
+88K   29.21K   libs/jQuery-2
+92K   29.44K   libs/jQuery-3
+220K  59.39K   libs/React-15
+140K  31.48K   libs/React-15-util
+80K   26.26K   libs/Vue
+76K   25.90K   libs/Vue-2
 ```
 
 Files
