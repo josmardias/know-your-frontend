@@ -9,7 +9,7 @@ $ for i in libs/*; do du -sh $i | tr -d '\n' | sed -e 's/\s.*$//'; echo -en "\t"
 1.1M  613.70K  libs/FontAwesome-4.6.3
 88K   29.21K   libs/jQuery-2
 92K   29.44K   libs/jQuery-3
-220K  59.39K   libs/React-15
+240K  63.28K   libs/React-15
 140K  31.48K   libs/React-15-util
 80K   26.26K   libs/Vue
 76K   25.90K   libs/Vue-2
@@ -31,6 +31,7 @@ $ for i in libs/*/*; do du -sh $i | tr -d '\n' | sed -e 's/\s.*$//'; echo -en "\
 88K   29.41K   libs/jQuery-3/jquery-3.1.1.min.js
 24K   7.34K    libs/React-15/react-15.4.1.min.js
 124K  36.96K   libs/React-15/react-dom-15.4.1.min.js
+20K   4.91K    libs/React-15/react-redux-5.0.2.min.js
 52K   13.56K   libs/React-15/ReactRouter-3.0.0.min.js
 8.0K  1.65K    libs/React-15/ReactRouterRedux-4.0.7.min.js
 8.0K  2.55K    libs/React-15/redux-3.6.0.min.js
